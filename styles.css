@@ -1,0 +1,53 @@
+*{
+    color: brown;
+    
+}
+#realname{
+    background-color: bisque;
+}
+.gender{
+    background-color: bisque;
+}
+label{
+    color: black;
+}
+p{
+    color: brown;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(ba56c580-d92c-11ec-bff7-45aa6fb43afe.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2250px;
+}
+.paragraph{
+    text-indent: 5%;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+h1{
+    text-shadow: 1px 2px 3px black;
+    border-style: ridge;
+    border-color: palegoldenrod;
+    border-width: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+}
+.textpo{
+    background-color: burlywood;
+    width: 200px;
+    height: 65;
+    border: 5px;
+    overflow: auto;
+}
+.content{
+    background-color:blanchedalmond;
+    border: 2px black;
+    padding: 20px;
+    margin: 2opx;
+}
