@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>My Online Portfolio</title>
+    <link rel="stylesheet" href="Portfoliostyle.css">
+</head>
+<body>
+<section class="sec">
+    <!-- ส่วนหัว -->
+    <header>
+        <img src="/IMG_4356.JPG" alt="รูปโปรไฟล์" class="profile-img">
+        <h1>นางสาวปาณัทดา อาปะโม</h1>
+        <p>นักเรียนแผนกวิชาคอมพิวเตอร์ สาขาเทคโนโลยีสารสนเทศ</p>
+    </header>
+
+    <!-- ทักษะ -->
+    <section>
+        <h2>ทักษะของฉัน</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- ประวัติการศึกษา -->
+    <section>
+        <h2>ประวัติการศึกษา</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ปีการศึกษา</th>
+                    <th>สถานศึกษา</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2560 - 2563</td>
+                    <td>โรงเรียนมัธยมพรสำราญ</td>
+                </tr>
+                <tr>
+                    <td>2564 - 2567</td>
+                    <td>วิทยาลัยเทคนิคคูเมือง</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ติดต่อ -->
+    <section>
+        <h2>ติดต่อฉัน</h2>
+        <form>
+            <label for="name">ชื่อผู้ติดต่อ:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">หัวข้อเรื่อง:</label>
+            <select id="subject" name="subject">
+                <option>สอบถามเรื่องงาน</option>
+                <option>ติชมผลงาน</option>
+                <option>เรื่องทั่วไป</option>
+            </select>
+
+            <label for="message">ข้อความ:</label>
+            <textarea id="message" name="message" placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </section>
+
+    <footer>
+       
+    </footer>
+</section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
