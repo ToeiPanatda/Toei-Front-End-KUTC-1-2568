@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+}
+h1{
+    display: block;
+}
+@media (max-width:699px) {
+    body{
+        background-color: plum;
+    }
+    #smartphone{
+        display: block;
+        color: rgb(0, 141, 16);
+    }
+      #tablets,#laptop,#tv{
+        display: none;
+    }
+}
+@media (min-width:700px) {
+    body{
+        background-color: rgb(54, 1, 54);
+    }
+    #tablets  {
+        display: block;
+        color: rgb(0, 141, 16);
+    }
+        #smartphone,#laptop,#tv{
+        display: none;
+    }
+}
+@media (min-width:1000px) {
+    body{
+        background-color: rgb(232, 23, 0);
+    }
+    #laptop{
+    display: block;
+    color: rgb(0, 0, 0);
+    }
+        #smartphone,#tablets ,#tv{
+        display: none;
+    }
+}
+@media (min-width:1200px) {
+    body{
+        background-color: rgb(252, 93, 156);
+    }
+    #tv{
+        display: block;
+        color: blue;
+    }
+         #smartphone,#tablets ,#laptop{
+        display: none;
+    }
+}
